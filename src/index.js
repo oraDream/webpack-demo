@@ -1,5 +1,7 @@
-import plantImg from './plant.jpg'
-var img = new Image();
-img.src = plantImg;
+import './index.scss';
+
+var p = document.createElement('p');
+p.classList.add('p1');
+
 var root = document.getElementById('root');
-root.append(img);
+root.append(p);
