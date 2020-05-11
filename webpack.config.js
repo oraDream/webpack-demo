@@ -6,19 +6,24 @@ module.exports = {
 		main: './src/index.js'
 	},
 	module: {
-		rules: [{
-			test: /\.scss$/,
-			use: [
-				'style-loader', 
-				'css-loader', 
-				'sass-loader',
-				'postcss-loader'
-			]
-		},{
+		rules: [ {
 			test: /\.(eot|ttf|svg)$/,
 			use: {
 				loader: 'file-loader'
-			}
+			} 
+		}, {
+			test: /\.scss$/,
+			use: [
+				'style-loader', 
+				{
+					loader: 'css-loader',
+					options: {
+						importLoaders: 2
+					}
+				},
+				'sass-loader',
+				'postcss-loader'
+			]
 		}]
 	},
 	output: {
