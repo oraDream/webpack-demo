@@ -1,7 +1,4 @@
+var root = document.getElementById('root');
 import './index.scss';
 
-var p = document.createElement('p');
-p.classList.add('p1');
-
-var root = document.getElementById('root');
-root.append(p);
+root.innerHTML = '<div class="iconfont icon-changjingguanli"></div>';

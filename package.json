@@ -14,6 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "node-sass": "^4.14.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
@@ -22,7 +24,6 @@
   },
   "dependencies": {
     "autoprefixer": "^9.7.6",
-    "node-sass": "^4.14.1",
-    "postcss": "^7.0.29"
+    "postcss": "^7.0.30"
   }
 }
