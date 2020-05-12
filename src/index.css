@@ -1,0 +1,9 @@
+.text{
+    color: pink;
+    text-align: center;
+    font-size: 16px;
+}
+.item:nth-child(odd){
+    background: red;
+    color: white;
+}

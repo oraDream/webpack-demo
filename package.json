@@ -4,7 +4,10 @@
   "description": "\"\"\u001b[Dwebpack打包de'mo",
   "main": "\u001b[A\u001b[C\u001b[\u001b[3~\u001b[C\u001b[Cmo\u001b[B",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -13,9 +16,14 @@
   "author": "Luisa.liu",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   }
 }

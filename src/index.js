@@ -1,5 +1,16 @@
-import plantImg from './plant.jpg'
-var img = new Image();
-img.src = plantImg;
-var root = document.getElementById('root');
-root.append(img);
+import  './index.css';
+import Header from './header'
+import Number from './number'
+import AddBtn from './addBtn'
+
+
+Header();
+Number();
+AddBtn();
+if(module.hot) {
+	module.hot.accept('./number', () => {
+		document.body.removeChild(document.getElementById('number'));
+		Number();
+	})
+}
+
