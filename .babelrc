@@ -1,0 +1,14 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "ios": "10.0.0",
+                    "ie":"11"
+                },
+                "useBuiltIns": "usage"
+            }
+        ]
+    ]
+}

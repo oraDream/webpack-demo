@@ -1,16 +1,21 @@
-import  './index.css';
-import Header from './header'
-import Number from './number'
-import AddBtn from './addBtn'
+import './index.css';
 
-
-Header();
-Number();
-AddBtn();
-if(module.hot) {
-	module.hot.accept('./number', () => {
-		document.body.removeChild(document.getElementById('number'));
-		Number();
+let f1 = function (param) {
+	return new Promise((resolve, reject) => {
+		if(param>3){
+			resolve(true)
+		}else{
+			resolve(false)
+		}
 	})
 }
+let f2 = async function(){
+	let res = await f1(4);
+	if(res){
+		console.log("大于3")
+	}else{
+		console.log("不大于3")
+	}
+}
 
+f2()
