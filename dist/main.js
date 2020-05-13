@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "c0108b0f1f93fa673ec4";
+/******/ 	var hotCurrentHash = "7f49ee23cda841dd44f0";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -920,7 +920,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/index.js","styles"]);
+/******/ 	deferredModules.push(["./src/index.js","vendors~main"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -932,24 +932,10 @@
   !*** ./src/index.js ***!
   \**********************/
 /*! no exports provided */
-/*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n\n\n\nfunction component() {\n  var element = document.createElement('div');\n  element.className = 'text';\n  element.innerHTML = ['Hello webpack!', '5 cubed is equal to ' + Object(_math_js__WEBPACK_IMPORTED_MODULE_1__[/* cube */ \"a\"])(5)].join('\\n\\n');\n  return element;\n}\n\ndocument.body.appendChild(component());//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvaW5kZXguanM/YjYzNSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgJy4vaW5kZXguY3NzJ1xyXG5pbXBvcnQgeyBjdWJlIH0gZnJvbSAnLi9tYXRoLmpzJztcclxuXHJcbmZ1bmN0aW9uIGNvbXBvbmVudCgpIHtcclxuXHR2YXIgZWxlbWVudCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xyXG5cdGVsZW1lbnQuY2xhc3NOYW1lID0gJ3RleHQnO1xyXG5cdGVsZW1lbnQuaW5uZXJIVE1MID0gW1xyXG5cdFx0J0hlbGxvIHdlYnBhY2shJyxcclxuXHRcdCc1IGN1YmVkIGlzIGVxdWFsIHRvICcgKyBjdWJlKDUpXHJcblx0XS5qb2luKCdcXG5cXG4nKTtcclxuXHJcblx0cmV0dXJuIGVsZW1lbnQ7XHJcbn1cclxuXHJcbmRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoY29tcG9uZW50KCkpOyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUtBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/index.js\n");
-
-/***/ }),
-
-/***/ "./src/math.js":
-/*!*********************!*\
-  !*** ./src/math.js ***!
-  \*********************/
-/*! exports provided: square, cube */
-/*! exports used: cube */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("/* unused harmony export square */\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"a\", function() { return cube; });\nfunction square(x) {\n  return x * x;\n}\nfunction cube(x) {\n  return x * x * x;\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvbWF0aC5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9tYXRoLmpzPzVhMDMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGZ1bmN0aW9uIHNxdWFyZSh4KSB7XHJcbiAgICByZXR1cm4geCAqIHg7XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBjdWJlKHgpIHtcclxuICAgIHJldHVybiB4ICogeCAqIHg7XHJcbn0iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/math.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n// 1、同步代码\n\nvar element = document.createElement('div');\nelement.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['hello', 'world'], '-');\ndocument.body.appendChild(element); // 2、异步代码\n// function getComponent() {\n// \t// 魔法注释：将异步打包的文件命名为lodashname\n// \treturn import(/* webpackChunkName:\"lodashname\" */ 'lodash').then(({ default: _ }) => {\n// \t\tvar element = document.createElement('div');\n// \t\telement.innerHTML = _.join(['hello', 'world'], '-');\n// \t\treturn element;\n// \t})\n// }\n// getComponent().then(element => {\n// \tdocument.body.appendChild(element);\n// });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvaW5kZXguanM/YjYzNSJdLCJzb3VyY2VzQ29udGVudCI6WyJcclxuLy8gMeOAgeWQjOatpeS7o+eggVxyXG5pbXBvcnQgXyBmcm9tICdsb2Rhc2gnO1xyXG5cclxudmFyIGVsZW1lbnQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdkaXYnKTtcclxuZWxlbWVudC5pbm5lckhUTUwgPSBfLmpvaW4oWydoZWxsbycsICd3b3JsZCddLCAnLScpO1xyXG5kb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGVsZW1lbnQpO1xyXG5cclxuXHJcbi8vIDLjgIHlvILmraXku6PnoIFcclxuLy8gZnVuY3Rpb24gZ2V0Q29tcG9uZW50KCkge1xyXG4vLyBcdC8vIOmtlOazleazqOmHiu+8muWwhuW8guatpeaJk+WMheeahOaWh+S7tuWRveWQjeS4umxvZGFzaG5hbWVcclxuLy8gXHRyZXR1cm4gaW1wb3J0KC8qIHdlYnBhY2tDaHVua05hbWU6XCJsb2Rhc2huYW1lXCIgKi8gJ2xvZGFzaCcpLnRoZW4oKHsgZGVmYXVsdDogXyB9KSA9PiB7XHJcbi8vIFx0XHR2YXIgZWxlbWVudCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xyXG4vLyBcdFx0ZWxlbWVudC5pbm5lckhUTUwgPSBfLmpvaW4oWydoZWxsbycsICd3b3JsZCddLCAnLScpO1xyXG4vLyBcdFx0cmV0dXJuIGVsZW1lbnQ7XHJcbi8vIFx0fSlcclxuLy8gfVxyXG5cclxuLy8gZ2V0Q29tcG9uZW50KCkudGhlbihlbGVtZW50ID0+IHtcclxuLy8gXHRkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGVsZW1lbnQpO1xyXG4vLyB9KTtcclxuIl0sIm1hcHBpbmdzIjoiQUFDQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBSUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/index.js\n");
 
 /***/ })
 

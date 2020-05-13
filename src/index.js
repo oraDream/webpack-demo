@@ -1,15 +1,22 @@
-import './index.css'
-import { cube } from './math.js';
 
-function component() {
-	var element = document.createElement('div');
-	element.className = 'text';
-	element.innerHTML = [
-		'Hello webpack!',
-		'5 cubed is equal to ' + cube(5)
-	].join('\n\n');
+// 1、同步代码
+import _ from 'lodash';
 
-	return element;
-}
+var element = document.createElement('div');
+element.innerHTML = _.join(['hello', 'world'], '-');
+document.body.appendChild(element);
 
-document.body.appendChild(component());
+
+// 2、异步代码
+// function getComponent() {
+// 	// 魔法注释：将异步打包的文件命名为lodashname
+// 	return import(/* webpackChunkName:"lodashname" */ 'lodash').then(({ default: _ }) => {
+// 		var element = document.createElement('div');
+// 		element.innerHTML = _.join(['hello', 'world'], '-');
+// 		return element;
+// 	})
+// }
+
+// getComponent().then(element => {
+// 	document.body.appendChild(element);
+// });
