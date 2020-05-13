@@ -1,21 +1,15 @@
-import './index.css';
+import './index.css'
+import { cube } from './math.js';
 
-let f1 = function (param) {
-	return new Promise((resolve, reject) => {
-		if(param>3){
-			resolve(true)
-		}else{
-			resolve(false)
-		}
-	})
-}
-let f2 = async function(){
-	let res = await f1(4);
-	if(res){
-		console.log("大于3")
-	}else{
-		console.log("不大于3")
-	}
+function component() {
+	var element = document.createElement('div');
+	element.className = 'text';
+	element.innerHTML = [
+		'Hello webpack!',
+		'5 cubed is equal to ' + cube(5)
+	].join('\n\n');
+
+	return element;
 }
 
-f2()
+document.body.appendChild(component());
