@@ -6,6 +6,7 @@ const path = require('path');
 
 module.exports = {
 	mode: 'development',
+	devtool:"source-map",
 	entry: {
 		main: './src/index.js'
 	},
@@ -25,9 +26,10 @@ module.exports = {
 			use: {
 				loader: 'url-loader',
 				options: {
-					name: '[name]_[hash].[ext]',
+					name: '[name]_[hash:7].[ext]',
 					outputPath: 'images/',
-					limit: 10240
+					limit: 10240,
+					publicPath:"http://xiaoludemo.esmartwave.com/Web2019/images/"
 				}
 			}
 		}, {
@@ -52,6 +54,6 @@ module.exports = {
 	],
 	output: {
 		filename: 'main.js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'dists')
 	}
 }

@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "4f610c90661ae1ff545a";
+/******/ 	var hotCurrentHash = "5ef94598d67bec0bd7ce";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1294,14 +1294,17 @@ function addBtn(){
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module './taodan'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _taodan_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./taodan.jpg */ "./src/taodan.jpg");
 
-function AddImg(){
-    let img = document.createElement("img");
-    img.src=!(function webpackMissingModule() { var e = new Error("Cannot find module './taodan'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
+
+function AddImg() {
+    var img = new Image();
+    img.src = _taodan_jpg__WEBPACK_IMPORTED_MODULE_0__["default"];
     document.body.appendChild(img)
 }
-/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/* harmony default export */ __webpack_exports__["default"] = (AddImg);
 
 /***/ }),
 
@@ -1484,6 +1487,19 @@ function Number() {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Number);
+
+/***/ }),
+
+/***/ "./src/taodan.jpg":
+/*!************************!*\
+  !*** ./src/taodan.jpg ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("http://xiaoludemo.esmartwave.com/Web2019/images/taodan_2aa2b9e.jpg");
 
 /***/ })
 
