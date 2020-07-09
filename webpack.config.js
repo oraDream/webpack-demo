@@ -32,7 +32,8 @@ module.exports = {
 	},
 	output: {
 		filename: 'main.js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'dist'),
+		publicPath:"http://xiaoludemo.esmartwave.com/Web2019/webpack/"
 	},
 	mode: 'development',
 	devtool: 'cheap-module-eval-source-map',// 只提示哪一行出错不提示列，只针对业务代码不针对loader(第三方模块)生成sourcemap，可以提升打包性能
